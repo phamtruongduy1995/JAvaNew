@@ -10,20 +10,20 @@ import java.util.Scanner;
  *
  * @author SPC
  */
-public class Bai7_HinhTron {
+public class HinhChuNhat {
     public static void main(String[] args) {
-        System.out.println("TINH DIEN TICH HINH TRON)");
-        double bankinh, chuvi, dientich;
-        
+        System.out.println("Tinh Dien Tich hinh Chu Nhat)");
+        double rong, dai, chuvi, dientich;
         Scanner sc = new Scanner (System.in);
+        System.out.println("Nhap Chieu Dai: ");
+        dai = sc.nextDouble();
+        System.out.println("Nhap Chieu Rong: ");
+        rong = sc.nextDouble();
         
-        System.out.print("Nhap Ban Kinh: ");
-        bankinh = sc.nextDouble();
-        
-        chuvi = Math.PI * bankinh *2;
-        dientich = Math.PI * bankinh * bankinh;
+        chuvi = (dai + rong)*2;
+        dientich = dai * rong;
         
          System.out.println("chu vi: " + chuvi);
          System.out.println("dien tich: " + dientich);
-}
+    }
 }
